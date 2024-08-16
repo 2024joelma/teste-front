@@ -1,40 +1,40 @@
-<<main class="principal">
+<main class="principal">
+  --ngform faz a validação
+    <form class="principal__formulario" id="formulario" #f="ngForm" (ngSubmit)="cadastrar(f)">
+      <h3 class="principal__subtitulo">Dados produto</h3>
+      <div class="formulario__campo">
+        <label class="campo__etiqueta" for="nome">Nome Item </label>
+        <input name="nome" id="nome" class="campo__escrita">
+      </div>
+      <div class="formulario__dupla">
+        <div class="formulario__campo">
+          <label class="campo__etiqueta" for="unidade">Unidade</label>
+          <input name="unidade" id="unidade" type="number" class="campo__escrita"/>
+        </div>
+        <div class="formulario__campo">
+          <label class="campo__etiqueta" for="quantidade">Quantidade</label>
+          <input name="quantidade" id="quantidade" type="number" class="campo__escrita"/>
+        </div>
+        <div class="formulario__campo">
+          <label class="campo__etiqueta" for="preco">Preço</label>
+          <input name="preco" id="preco" type="number" class="campo__escrita"/>
+        </div>
+      </div>
+      <div class="formulario__dupla">
+        <div class="formulario__campo">
+          <label class="campo__etiqueta" for="perecivel">Perecivel</label>
+          <input name="perecivel" id="perecivel" type="date" class="campo__escrita"/>
+        </div>
+        <div class="formulario__campo">
+          <label class="campo__etiqueta" for="datav">Data de validade </label>
+          <input name="datav" id="datav" type="date" class="campo__escrita"/>
+        </div>
+        <div class="formulario__campo">
+          <label class="campo__etiqueta" for="dataf">Data de fabricação</label>
+          <input name="dataf" id="dataf" type="date"  class="campo__escrita"/>
+        </div>
+      </div>
+      <button type="submit" class="formulario__botao">Cadastrar Produto</button>
+     </form>
 
-  <form class="principal__formulario" id="formulario">
-    <h3 class="principal__subtitulo">Dados produto</h3>
-    <div class="formulario__campo">
-      <label class="campo__etiqueta" for="nome">Nome Item </label>
-      <input name="nome" id="nome" class="campo__escrita">
-    </div>
-    <div class="formulario__dupla">
-      <div class="formulario__campo">
-        <label class="campo__etiqueta" for="unidade">Unidade</label>
-        <input name="unidade" id="unidade" type="number" class="campo__escrita"/>
-      </div>
-      <div class="formulario__campo">
-        <label class="campo__etiqueta" for="quantidade">Quantidade</label>
-        <input name="quantidade" id="quantidade" type="number" class="campo__escrita"/>
-      </div>
-      <div class="formulario__campo">
-        <label class="campo__etiqueta" for="preco">Preço</label>
-        <input name="preco" id="preco" type="number" class="campo__escrita"/>
-      </div>
-    </div>
-    <div class="formulario__dupla">
-      <div class="formulario__campo">
-        <label class="campo__etiqueta" for="perecivel">Perecivel</label>
-        <input name="perecivel" id="perecivel" type="date" class="campo__escrita"/>
-      </div>
-      <div class="formulario__campo">
-        <label class="campo__etiqueta" for="datav">Data de validade </label>
-        <input name="datav" id="datav" type="date" class="campo__escrita"/>
-      </div>
-      <div class="formulario__campo">
-        <label class="campo__etiqueta" for="dataf">Data de fabricação</label>
-        <input name="dataf" id="dataf" type="date"  class="campo__escrita"/>
-      </div>
-    </div>
-    <button type="submit" class="formulario__botao">Enviar formulário</button>
-   </form>
-
-</main>
+  </main>
